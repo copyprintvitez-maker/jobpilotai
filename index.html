@@ -1,11 +1,359 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>JobPilot AI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JobPilot AI — Smarter Job Search</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080b12;
+  color: #f5f7fb;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+nav {
+  padding: 24px 0;
+  border-bottom: 1px solid #202532;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #6ea8fe;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 0 70px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #293348;
+  border-radius: 30px;
+  color: #9fb8e8;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.05;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 span {
+  color: #6ea8fe;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 25px auto;
+  color: #aeb7c8;
+  font-size: 19px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 30px;
+  background: #6ea8fe;
+  color: #07101f;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.price {
+  margin-top: 14px;
+  color: #8993a6;
+}
+
+section {
+  padding: 70px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 45px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: #10151f;
+  border: 1px solid #222b3b;
+  border-radius: 14px;
+  padding: 26px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  color: #aeb7c8;
+}
+
+.cta {
+  text-align: center;
+  background: #0e1420;
+  border-top: 1px solid #202938;
+  border-bottom: 1px solid #202938;
+}
+
+.cta h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  color: #aeb7c8;
+  max-width: 650px;
+  margin: auto;
+}
+
+footer {
+  padding: 35px 0;
+  text-align: center;
+  color: #687386;
+  font-size: 14px;
+}
+
+@media (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 65px 0 50px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .cta h2 {
+    font-size: 32px;
+  }
+}
+</style>
 </head>
+
 <body>
-    <h1>JobPilot AI</h1>
-    <h2>Your AI-Powered Job Search System</h2>
-    <p>Build a stronger resume. Find better jobs. Prepare for interviews.</p>
+
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">JobPilot <span>AI</span></div>
+    <div>Smart Job Search</div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+
+    <div class="badge">AI-Powered Job Search System</div>
+
+    <h1>
+      Stop guessing.<br>
+      Start job hunting with a <span>system.</span>
+    </h1>
+
+    <p>
+      Build a stronger resume, find better-fit opportunities,
+      prepare for interviews and apply with confidence using AI.
+    </p>
+
+    <a class="button" href="#buy">
+      Get the Toolkit — $19.99
+    </a>
+
+    <div class="price">
+      One-time purchase • Digital download
+    </div>
+
+  </div>
+</header>
+
+<section>
+  <div class="container">
+
+    <h2 class="section-title">Everything you need to job hunt smarter</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>🎯 Find Better Jobs</h3>
+        <p>
+          Use AI to identify suitable roles, analyze job descriptions
+          and focus your applications on opportunities that actually fit.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📄 Build a Strong Resume</h3>
+        <p>
+          Improve your resume for real employers and ATS systems
+          without inventing qualifications or experience.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>✉️ Write Better Applications</h3>
+        <p>
+          Create tailored cover letters and application answers
+          faster with practical AI workflows.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎤 Master Interviews</h3>
+        <p>
+          Prepare answers, practice common questions and build
+          confident STAR stories before the interview.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💼 Optimize LinkedIn</h3>
+        <p>
+          Improve your profile, discover opportunities and make
+          your professional presence stronger.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💰 Negotiate Salary</h3>
+        <p>
+          Prepare your salary expectations and negotiation strategy
+          before you receive an offer.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="section-title">What's inside?</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Main Job Hunt Guide</h3>
+        <p>A practical step-by-step system for using AI throughout your job search.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI Prompt Library</h3>
+        <p>Ready-to-use prompts for resumes, jobs, interviews, LinkedIn and more.</p>
+      </div>
+
+      <div class="card">
+        <h3>ATS Resume Template</h3>
+        <p>A clean structure designed to help your real experience stand out.</p>
+      </div>
+
+      <div class="card">
+        <h3>Interview Workbook</h3>
+        <p>Exercises and preparation tools for common interview situations.</p>
+      </div>
+
+      <div class="card">
+        <h3>STAR Answer Workbook</h3>
+        <p>Turn your real experiences into clear, structured interview stories.</p>
+      </div>
+
+      <div class="card">
+        <h3>Job Application Tracker</h3>
+        <p>Keep applications, follow-ups and interview stages organized.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="section-title">A simple 15-minute application system</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>1. Find</h3>
+        <p>Identify a suitable job and quickly understand what the employer wants.</p>
+      </div>
+
+      <div class="card">
+        <h3>2. Tailor</h3>
+        <p>Use AI to adapt your real resume and application to the specific role.</p>
+      </div>
+
+      <div class="card">
+        <h3>3. Apply</h3>
+        <p>Submit a stronger application and track it so nothing gets forgotten.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="cta" id="buy">
+  <div class="container">
+
+    <h2>Ready to job hunt smarter?</h2>
+
+    <p>
+      Get the complete JobPilot AI Toolkit and turn your job search
+      into a repeatable system.
+    </p>
+
+    <a class="button" href="CHECKOUT_URL_HERE">
+      Get JobPilot AI — $19.99
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 JobPilot AI. All rights reserved.
+</footer>
+
 </body>
 </html>
